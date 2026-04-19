@@ -1,4 +1,4 @@
-## Terminal Fonts
+## Nerd Fonts
 
-- MesloLGS Nerd Font Mono
-- JetBrainsMono Nerd Font Mono
+- Meslo
+- JetBrainsMono
