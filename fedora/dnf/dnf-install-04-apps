@@ -1,4 +1,8 @@
 #!/bin/bash
 
 
-dnf install gimp inkscape vlc lollypop
+dnf install \
+    gimp \
+    inkscape \
+    vlc \
+    lollypop

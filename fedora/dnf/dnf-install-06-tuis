@@ -2,7 +2,12 @@
 
 
 # Music Player
-dnf install mpd mpc mpdris2 ncmpcpp cava
+dnf install \
+    mpd \
+    mpc \
+    mpdris2 \
+    ncmpcpp \
+    cava
 
 
 # Torrent Client
@@ -10,4 +15,8 @@ dnf install rtorrent
 
 
 # Candy
-dnf install cmatrix neo cbonsai asciiquarium
+dnf install \
+    cmatrix \
+    neo \
+    cbonsai \
+    asciiquarium

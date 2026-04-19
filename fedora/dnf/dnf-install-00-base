@@ -16,16 +16,30 @@ dnf install zsh
 
 
 # User Utils
-dnf install figlet fortune-mod fastfetch
+dnf install \
+    figlet \
+    fortune-mod \
+    fastfetch
 
 
 # System Utils
-dnf install stow lshw btop htop
+dnf install \
+    stow \
+    lshw \
+    btop \
+    htop
 
 
 # Terminal Multiplexers
-dnf install tmux screen
+dnf install \
+    tmux \
+    screen
 
 
 # Maintenance
-dnf install rpmconf remove-retired-packages clean-rpm-gpg-pubkey symlinks dracut-config-rescue
+dnf install \
+    rpmconf \
+    remove-retired-packages \
+    clean-rpm-gpg-pubkey \
+    symlinks \
+    dracut-config-rescue

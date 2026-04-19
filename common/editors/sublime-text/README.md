@@ -4,7 +4,7 @@
 
 Copy settings files to the sublime text config directory:
 
-```
+```zsh
 
 > cp setup/editors/sublime-text/*.sublime-settings ~/.config/sublime-text/Packages/User
 > cp setup/editors/sublime-text/*.sublime-keymap   ~/.config/sublime-text/Packages/User

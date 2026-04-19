@@ -4,7 +4,7 @@
 
 It may be necessary to force the scaling of plymouth - in which case execute the following:
 
-```
+```zsh
 
 > rpm-ostree kargs --editor
 
@@ -24,7 +24,7 @@ And add the following arguments:
 
 It may be necessary to force the scaling of GDM - in which case execute the following:
 
-```
+```zsh
 
 > machinectl shell gdm@ /bin/bash
 
@@ -41,7 +41,7 @@ Specify your preferred scaling factor and accent color.
 
 Note: The above no longer works since Gnome 49 - you will need to also perform the following:
 
-```
+```zsh
 
 > cp /var/lib/gdm/.config/dconf/user /var/lib/gdm/seat0/config/dconf/user
 
@@ -51,7 +51,7 @@ Note: The above no longer works since Gnome 49 - you will need to also perform t
 If you copied monitor settings to the gdm home directory you will also need to perform
 the following step:
 
-```
+```zsh
 
 > cp /var/lib/gdm/.config/monitors.xml /var/lib/gdm/seat0/config/monitors.xml
 
@@ -60,7 +60,7 @@ the following step:
 
 You may also need to do the following to restore SELinux security contexts:
 
-```
+```zsh
 
 > restorecon -RFv /var/lib/gdm/
 
@@ -69,7 +69,7 @@ You may also need to do the following to restore SELinux security contexts:
 
 ## Apps (Root)
 
-```
+```zsh
 
 > rpm-ostree install zsh figlet fortume-mod stow
 
@@ -81,7 +81,7 @@ You may also need to do the following to restore SELinux security contexts:
 
 ## Config (Root)
 
-```
+```zsh
 
 > hostnamectl set-hostname <hostname>
 
@@ -92,7 +92,7 @@ You may also need to do the following to restore SELinux security contexts:
 
 ## Config (User)
 
-```
+```zsh
 
 > gsettings get org.gnome.shell.window-switcher current-workspace-only
 > gsettings set org.gnome.shell.window-switcher current-workspace-only false

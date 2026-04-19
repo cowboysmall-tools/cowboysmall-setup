@@ -10,7 +10,9 @@ dnf install flatpak
 
 
 # Pipewire
-dnf install pipewire wireplumber
+dnf install \
+    pipewire \
+    wireplumber
 
 
 # Browser
@@ -18,8 +20,14 @@ dnf install qutebrowser
 
 
 # Utils
-dnf install network-manager-applet blueman
+dnf install \
+    network-manager-applet \
+    blueman
 
 
 # Look and Feel Related
-dnf install papirus-icon-theme nwg-look qt5ct qt6ct
+dnf install \
+    papirus-icon-theme \
+    nwg-look \
+    qt5ct \
+    qt6ct

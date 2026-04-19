@@ -6,7 +6,7 @@ There is an issue with the latest google chrome rpm - it adds two desktop entrie
 mis-configured entry in one of them, resulting in two chrome icons in the app overview.
 A temporary fix:
 
-```
+```zsh
 
 > cp /usr/share/applications/com.google.Chrome.desktop ~/.local/share/applications
 
@@ -17,7 +17,7 @@ A temporary fix:
 
 ## Archives (Root)
 
-```
+```zsh
 
 > mkdir Bak && cd Bak/
 
@@ -28,11 +28,12 @@ A temporary fix:
 
 ## Archives (User)
 
-```
+```zsh
 
 > mkdir Bak && cd Bak/
 
 > tar -xzvf /Path/To/Archives/User/Bin.tar.gz
+
 ...
 
 

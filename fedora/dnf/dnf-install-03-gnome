@@ -2,7 +2,9 @@
 
 
 # Apps
-dnf install gnome-tweaks gnome-extensions-app
+dnf install \
+    gnome-tweaks \
+    gnome-extensions-app
 
 
 # Extensions

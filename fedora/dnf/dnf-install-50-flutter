@@ -2,4 +2,7 @@
 
 
 # Flutter / Dart Required Packages
-dnf install ninja-build gtk3-devel egl-utils
+dnf install \
+    ninja-build \
+    gtk3-devel \
+    egl-utils

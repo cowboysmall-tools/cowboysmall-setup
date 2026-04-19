@@ -6,7 +6,7 @@
 
 Create global prefix directory:
 
-```
+```zsh
 
 > mkdir ~/.npm-global
 > npm config set prefix "~/.npm-global"
@@ -26,7 +26,7 @@ export PATH=$NPM_PREFIX/bin:$PATH
 
 install extensions:
 
-```
+```zsh
 
 > npm install --global web-ext
 
@@ -46,7 +46,7 @@ Check the health of installed nvim plugin modules by executing the following:
 
 If modules fail to install due to checksum mismatches try executing the following:
 
-```
+```zsh
 
 > go clean -modcache
 > go mod tidy
@@ -61,7 +61,7 @@ If modules fail to install due to checksum mismatches try executing the followin
 After upgrading you may want to remove these
 old Gnome apps that have been dropped / replaced:
 
-```
+```zsh
 
 > dnf remove totem evince eog devhelp rhythmbox gnome-screenshot
 

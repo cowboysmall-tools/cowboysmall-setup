@@ -14,11 +14,15 @@ dnf install \
 
 
 # Graphene
-dnf install graphene graphene-devel
+dnf install \
+    graphene \
+    graphene-devel
 
 
 # GLFW
-dnf install glfw glfw-devel
+dnf install \
+    glfw \
+    glfw-devel
 
 
 # GLAD
@@ -26,20 +30,30 @@ dnf install glad
 
 
 # mesa libEGL
-dnf install mesa-libEGL mesa-libEGL-devel
+dnf install \
+    mesa-libEGL \
+    mesa-libEGL-devel
 
 
 # mesa libGL
-dnf install mesa-libGL mesa-libGL-devel
+dnf install \
+    mesa-libGL \
+    mesa-libGL-devel
 
 
 # libdecor
-dnf install libdecor libdecor-devel
+dnf install \
+    libdecor \
+    libdecor-devel
 
 
 # freeglut (optional)
-dnf install freeglut freeglut-devel
+dnf install \
+    freeglut \
+    freeglut-devel
 
 
 # EGL Wayland Support (optional)
-dnf install egl-wayland egl-wayland-devel
+dnf install \
+    egl-wayland \
+    egl-wayland-devel

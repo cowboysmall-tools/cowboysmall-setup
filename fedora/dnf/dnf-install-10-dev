@@ -30,7 +30,9 @@ dnf install rustup
 
 
 # Go
-dnf install golang hugo
+dnf install \
+    golang \
+    hugo
 
 
 # Zig
@@ -42,8 +44,12 @@ dnf install lua
 
 
 # GTK4
-dnf install gtk4 gtk4-devel
+dnf install \
+    gtk4 \
+    gtk4-devel
 
 
 # Liadwaita
-dnf install libadwaita libadwaita-devel
+dnf install \
+    libadwaita \
+    libadwaita-devel

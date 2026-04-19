@@ -4,7 +4,7 @@
 
 Copy the `prime-run` script to the local bin directory:
 
-```
+```zsh
 
 > cp setup/os/common/gpu/prime-run ~/.local/bin
 
@@ -13,7 +13,7 @@ Copy the `prime-run` script to the local bin directory:
 
 ## Integrated
 
-```
+```zsh
 
 > glxinfo | grep "OpenGL renderer"
 
@@ -22,7 +22,7 @@ Copy the `prime-run` script to the local bin directory:
 
 or explicitly:
 
-```
+```zsh
 
 > __GLX_VENDOR_LIBRARY_NAME=mesa glxinfo | grep "OpenGL renderer"
 
@@ -31,7 +31,7 @@ or explicitly:
 
 ## Discrete (NVIDIA)
 
-```
+```zsh
 
 > prime-run glxinfo | grep "OpenGL renderer"
 
@@ -40,7 +40,7 @@ or explicitly:
 
 or explicitly:
 
-```
+```zsh
 
 > __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia glxinfo | grep "OpenGL renderer"
 
@@ -48,7 +48,7 @@ or explicitly:
 
 or:
 
-```
+```zsh
 
 > __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only glxinfo | grep "OpenGL renderer"
 
@@ -57,7 +57,7 @@ or:
 
 or:
 
-```
+```zsh
 
 > __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only __GL_YIELD=USLEEP glxinfo | grep "OpenGL renderer"
 
@@ -68,7 +68,7 @@ NOTE: use `__GL_YIELD=USLEEP` with caution as it seems to cause performance issu
 
 ## Discrete (AMD)
 
-```
+```zsh
 
 > DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
 

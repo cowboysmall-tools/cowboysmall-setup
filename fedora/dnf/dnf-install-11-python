@@ -24,4 +24,7 @@ dnf install \
     python3-pyasynchat
 
 
-dnf install uv hatch ruff
+dnf install \
+    uv \
+    hatch \
+    ruff

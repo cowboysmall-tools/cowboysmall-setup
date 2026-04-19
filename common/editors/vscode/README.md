@@ -4,11 +4,10 @@
 
 Copy settings file to the vscode config directory:
 
-```
+```zsh
 
 > cp setup/editors/vscode/settings.json    ~/.config/Code/User/
 > cp setup/editors/vscode/keybindings.json ~/.config/Code/User/
-> cp setup/editors/vscode/extensions.json  ~/.vscode/extensions/
 
 ```
 
