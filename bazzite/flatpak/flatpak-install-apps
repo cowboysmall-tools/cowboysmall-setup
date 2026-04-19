@@ -5,7 +5,6 @@ echo
 
 
 flatpak install --assumeyes flathub com.belmoussaoui.Authenticator
-flatpak install --assumeyes flathub com.discordapp.Discord
 flatpak install --assumeyes flathub com.heroicgameslauncher.hgl
 flatpak install --assumeyes flathub com.obsproject.Studio
 flatpak install --assumeyes flathub com.spotify.Client
@@ -17,6 +16,7 @@ flatpak install --assumeyes flathub org.videolan.VLC
 flatpak install --assumeyes flathub rocks.shy.VacuumTube
 
 
+# flatpak install --assumeyes flathub com.discordapp.Discord
 # flatpak install --assumeyes flathub org.gnome.Fractal
 # flatpak install --assumeyes flathub org.gnome.Podcasts
 # flatpak install --assumeyes flathub org.gnome.Lollypop

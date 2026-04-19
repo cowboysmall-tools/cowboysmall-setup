@@ -1,2 +1,3 @@
-# cowboysmall-setup
-Collected setup scripts for setting up systems
+# Cowboysmall Setup
+
+Collected setup scripts for setting up the various systems used

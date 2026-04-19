@@ -1,6 +1,8 @@
-# Setup
+# Setup Notes
 
 ## Grub
+
+It may be necessary to force the scaling of plymouth - in which case execute the following:
 
 ```
 
@@ -9,7 +11,7 @@
 
 ```
 
-Add the following arguments:
+And add the following arguments:
 
 ```
 
@@ -19,6 +21,8 @@ Add the following arguments:
 ```
 
 ## GDM
+
+It may be necessary to force the scaling of GDM - in which case execute the following:
 
 ```
 
@@ -33,8 +37,9 @@ Add the following arguments:
 
 ```
 
-Specify your preferred scaling factor and accent color. Note: The above does not work
-since Gnome 49 - you will need to also perform the following:
+Specify your preferred scaling factor and accent color.
+
+Note: The above no longer works since Gnome 49 - you will need to also perform the following:
 
 ```
 
@@ -100,3 +105,7 @@ You may also need to do the following to restore SELinux security contexts:
 
 
 ```
+
+# Installation Notes
+
+# Update / Upgrade Notes

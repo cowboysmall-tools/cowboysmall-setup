@@ -1,9 +1,4 @@
-
 # VSCode Configs and Extensions
-
-
-
-
 
 ## Configs
 
@@ -16,10 +11,6 @@ Copy settings file to the vscode config directory:
 > cp setup/editors/vscode/extensions.json  ~/.vscode/extensions/
 
 ```
-
-
-
-
 
 ## Working Extensions
 
@@ -72,7 +63,6 @@ ziglang.vscode-zig
 
 ```
 
-
 ## Problem Extensions
 
 These extensions do not play nicely with other extensions:
@@ -81,4 +71,3 @@ These extensions do not play nicely with other extensions:
 
 
 ```
-
