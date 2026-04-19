@@ -9,13 +9,13 @@ mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts
 # download, extract, and cleanup the fonts
 for font in $fonts; do
     echo "Downloading Font Archive: $font"
-    curl -sOL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz
+    curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/$font.tar.xz
     echo "Creating Font Directory: $font"
     mkdir $font
     echo "Extracting Font Into Directory: $font"
-    tar xf $font.tar.xz -C $font/
+    tar xf /tmp/$font.tar.xz -C $font/
     echo "Removing Font Archive: $font"
-    rm -f $font.tar.xz
+    rm -f /tmp/$font.tar.xz
 done
 
 # refresh the font cache
