@@ -1,4 +1,5 @@
 // SublimeLinter Settings - User
+
 {
   // "debug": true,
 
@@ -10,7 +11,7 @@
         "${folder}/lib",
         "${folder}/tests",
         "${file_path}"
-      ],
+      ]
     },
     "clang++": {
       "I": [
@@ -19,7 +20,7 @@
         "${folder}/lib",
         "${folder}/tests",
         "${file_path}"
-      ],
+      ]
     },
     "pycodestyle": {
       "filter_errors": [
@@ -31,8 +32,8 @@
         "E303",
         "E501",
         "W291",
-        "W391",
-      ],
-    },
-  },
+        "W391"
+      ]
+    }
+  }
 }

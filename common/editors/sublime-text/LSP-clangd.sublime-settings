@@ -1,7 +1,7 @@
 // Settings in here override those in "LSP-clangd/LSP-clangd.sublime-settings"
 
 {
-  "initializationOptions": {
+  "initialization_options": {
     "fallbackFlags": [
       "-I${folder}/include",
       "-I${folder}/lib",

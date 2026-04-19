@@ -1,4 +1,5 @@
 // Settings in here override those in "LSP/LSP.sublime-settings"
+
 {
-  "link_highlight_style": "none",
+  "link_highlight_style": "none"
 }

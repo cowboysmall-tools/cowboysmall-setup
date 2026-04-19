@@ -6,8 +6,7 @@ Copy settings file to the vscode config directory:
 
 ```zsh
 
-> cp setup/editors/vscode/settings.json    ~/.config/Code/User/
-> cp setup/editors/vscode/keybindings.json ~/.config/Code/User/
+> cp setup/editors/vscode/*.json    ~/.config/Code/User/
 
 ```
 
@@ -17,8 +16,6 @@ These extensions work well and are essential:
 
 ```
 
-catppuccin.catppuccin-vsc
-catppuccin.catppuccin-vsc-icons
 dart-code.dart-code
 dart-code.flutter
 docker.docker
@@ -62,11 +59,23 @@ ziglang.vscode-zig
 
 ```
 
+## Theme Extensions
+
+These extensions work well and are optional:
+
+```
+
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+
+
+```
+
 ## Problem Extensions
 
 These extensions do not play nicely with other extensions:
 
 ```
-
+...
 
 ```

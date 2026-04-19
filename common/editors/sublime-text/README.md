@@ -6,9 +6,7 @@ Copy settings files to the sublime text config directory:
 
 ```zsh
 
-> cp setup/editors/sublime-text/*.sublime-settings ~/.config/sublime-text/Packages/User
-> cp setup/editors/sublime-text/*.sublime-keymap   ~/.config/sublime-text/Packages/User
-> cp setup/editors/sublime-text/*.sublime-mousemap ~/.config/sublime-text/Packages/User
+> cp setup/editors/sublime-text/*.sublime-* ~/.config/sublime-text/Packages/User
 
 ```
 
@@ -19,10 +17,8 @@ These packages work well and are essential:
 ```
 
 BracketHighlighter
-Catppuccin color schemes
 Dartlight
 Dockerfile Syntax Highlighting
-FileIcons
 GitGutter
 Gomod
 Helium
@@ -64,6 +60,18 @@ SyncedSideBar
 Terminus
 TOML
 Zig Language
+
+```
+
+## Theme Extensions
+
+These extensions work well and are optional:
+
+```
+
+Catppuccin color schemes
+FileIcons
+
 
 ```
 
