@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p ~/Apps
+
+
+# download zed archive
+curl -sL https://cloud.zed.dev/releases/stable/latest/download?asset=zed&arch=x86_64&os=linux -o /tmp/zed.app.tar.gz
+
+
+# extract zed to Apps directory
+tar xzvf /tmp/zed.app.tar.gz -C ~/Apps
+
+
+# install the desktop file
+install -D ~/Apps/zed.app/share/applications/dev.zed.Zed.desktop -t ~/.local/share/applications
+sed -i "s|Icon=zed|Icon=$HOME/Apps/zed.app/share/icons/hicolor/512x512/apps/zed.png|g" ~/.local/share/applications/dev.zed.Zed.desktop
+sed -i "s|Exec=zed|Exec=$HOME/Apps/zed.app/bin/zed|g" ~/.local/share/applications/dev.zed.Zed.desktop
+
+
+# copy configs
+# cp config/*.json ~/.config/zed/
