@@ -6,7 +6,7 @@ Copy the hwdb file to the following location:
 
 ```zsh
 
-> sudo cp setup/os/common/udev/hwdb.d/99-bpr3s.hwdb /etc/udev/hwdb.d/
+> sudo cp common/udev/hwdb.d/99-bpr3s.hwdb /etc/udev/hwdb.d/
 
 
 ```
