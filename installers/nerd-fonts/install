@@ -4,7 +4,7 @@
 fonts="JetBrainsMono Meslo"
 
 # change directory to the local fonts directory - create it if it doesn't exist
-mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts
+mkdir -p $HOME/.local/share/fonts && cd $HOME/.local/share/fonts
 
 # download, extract, and cleanup the fonts
 for font in $fonts; do

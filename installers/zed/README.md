@@ -6,7 +6,7 @@ Copy settings file to the zed config directory:
 
 ```zsh
 
-> cp setup/editors/zed/*.json ~/.config/zed/
+> cp common/applications/zed/config/*.json ~/.config/zed/
 
 ```
 

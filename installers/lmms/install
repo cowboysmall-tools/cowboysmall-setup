@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p $HOME/Apps/lmms
+
+
+# download archive
+curl -sL https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage -o $HOME/Apps/lmms/lmms-1.2.2-linux-x86_64.AppImage
+
+
+# extract to Apps directory
+
+
+
+# install files
+install -D $SCRIPT_DIR/config/lmms.desktop -t $HOME/.local/share/applications
+
+
+
+# update desktop files
+sed -i "s|Icon=firefox-dev|Icon=$HOME/Apps/firefox/browser/chrome/icons/default/default128.png|g" $HOME/.local/share/applications/firefox-dev.desktop
+sed -i "s|Exec=firefox-dev|Exec=$HOME/Apps/firefox/firefox|g" $HOME/.local/share/applications/firefox-dev.desktop
+
+
+# copy configs

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p $HOME/Apps
+
+
+# download archive
+curl -sL https://cloud.zed.dev/releases/stable/latest/download?asset=zed&arch=x86_64&os=linux -o /tmp/zed.app.tar.gz
+
+
+# extract to Apps directory
+tar xzvf /tmp/zed.app.tar.gz -C $HOME/Apps
+
+
+# install files
+install -D $HOME/Apps/zed.app/share/applications/dev.zed.Zed.desktop -t $HOME/.local/share/applications
+
+
+
+# update desktop files
+sed -i "s|Icon=zed|Icon=$HOME/Apps/zed.app/share/icons/hicolor/512x512/apps/zed.png|g" $HOME/.local/share/applications/dev.zed.Zed.desktop
+sed -i "s|Exec=zed|Exec=$HOME/Apps/zed.app/bin/zed|g" $HOME/.local/share/applications/dev.zed.Zed.desktop
+
+
+# copy configs
+cp $SCRIPT_DIR/config/*.json $HOME/.config/zed/

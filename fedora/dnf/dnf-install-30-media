@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+dnf install \
+    Carla lv2-carla \
+    helm lv2-helm \
+    amsynth lv2-amsynth-plugin \
+    zynaddsubfx zynaddsubfx-lv2
+
+
+dnf install \
+    youtube-dl gydl \
+    hydrogen
+

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p $HOME/Apps
+
+
+# download archive
+curl -sL https://launcher.mojang.com/download/Minecraft.tar.gz -o /tmp/minecraft-launcher.tar.gz
+
+
+# extract to Apps directory
+tar xzvf /tmp/minecraft-launcher.tar.gz -C $HOME/Apps
+
+
+# install files
+install -D $SCRIPT_DIR/config/minecraft-launcher.desktop -t $HOME/.local/share/applications
+install -D $SCRIPT_DIR/config/minecraft-launcher.png -t $HOME/Apps/minecraft-launcher
+
+
+# update desktop files
+sed -i "s|Icon=minecraft-launcher|Icon=$HOME/Apps/minecraft-launcher/minecraft-launcher.png|g" $HOME/.local/share/applications/minecraft-launcher.desktop
+sed -i "s|Exec=minecraft-launcher|Exec=$HOME/Apps/minecraft-launcher/minecraft-launcher|g" $HOME/.local/share/applications/minecraft-launcher.desktop
+
+
+# copy configs
