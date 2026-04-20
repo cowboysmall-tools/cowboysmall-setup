@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # define the fonts to be installed
 fonts="JetBrainsMono Meslo"

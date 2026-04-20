@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 rpm --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg

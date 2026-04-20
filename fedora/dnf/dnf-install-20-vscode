@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 rpm --import https://packages.microsoft.com/keys/microsoft.asc

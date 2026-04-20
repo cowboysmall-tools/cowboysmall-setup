@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+# FFMPEG
+dnf swap ffmpeg-free ffmpeg --allowerasing

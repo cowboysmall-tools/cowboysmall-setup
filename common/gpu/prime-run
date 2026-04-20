@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 # The typical / standard environment variables to set to offload rendering to discrete nvidia GPU:

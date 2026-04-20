@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+
+# Gnome Apps
+dnf install \
+    gnome-tweaks \
+    gnome-extensions-app \
+    gnome-shell-extension-appindicator \
+    gnome-shell-extension-blur-my-shell \
+    gnome-shell-extension-just-perfection \
+    gnome-themes-extra

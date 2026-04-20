@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+
+# Base
+dnf install \
+    zsh \
+    figlet \
+    fortune-mod \
+    fastfetch

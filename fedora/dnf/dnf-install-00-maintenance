@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+
+# Base
+dnf install \
+    rpmconf \
+    remove-retired-packages \
+    clean-rpm-gpg-pubkey \
+    symlinks \
+    dracut-config-rescue
