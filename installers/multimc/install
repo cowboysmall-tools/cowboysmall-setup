@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p $HOME/Apps
+
+
+# download archive
+curl -sL https://files.multimc.org/downloads/mmc-develop-lin64.tar.gz -o /tmp/mmc-develop-lin64.tar.gz
+
+
+# extract to Apps directory
+tar xzvf /tmp/mmc-develop-lin64.tar.gz -C $HOME/Apps
+
+
+# install files
+install -D $SCRIPT_DIR/config/MultiMC.desktop -t $HOME/.local/share/applications
+install -D $SCRIPT_DIR/config/MultiMC.svg -t $HOME/Apps/MultiMC
+
+
+# update desktop files
+sed -i "s|Icon=MultiMC|Icon=$HOME/Apps/MultiMC/MultiMC.svg|g" $HOME/.local/share/applications/MultiMC.desktop
+sed -i "s|Exec=MultiMC|Exec=$HOME/Apps/MultiMC/MultiMC|g" $HOME/.local/share/applications/MultiMC.desktop
+
+
+# copy configs

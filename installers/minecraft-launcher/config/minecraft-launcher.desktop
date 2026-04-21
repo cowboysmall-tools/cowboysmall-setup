@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=Minecraft Launcher
 Comment=Official Minecraft Launcher
-Exec=minecraft-launcher
+
 Icon=minecraft-launcher
+Exec=minecraft-launcher
+
 Terminal=false
+
 Type=Application
 Categories=Game;Application;
-Version=1.0
-# StartupWMClass=Minecraft
 StartupWMClass=minecraft-launcher
+Version=1.0

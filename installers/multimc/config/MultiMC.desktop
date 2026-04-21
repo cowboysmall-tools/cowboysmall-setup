@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=MultiMC
+
+Icon=/home/jerry/Apps/MultiMC/MultiMC.svg
+Exec=/home/jerry/Apps/MultiMC/MultiMC
+
+Terminal=false
+
+Type=Application
+Categories=Game;
+Keywords=game;Minecraft;
+MimeType=
