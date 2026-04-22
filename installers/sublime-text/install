@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+
+
+
+# download archive
+
+
+
+# extract to Apps directory
+
+
+
+# install files
+
+
+
+
+# update desktop files
+
+
+
+
+# copy configs
+cp $SCRIPT_DIR/config/*.sublime-* $HOME/.config/sublime-text/Packages/User
