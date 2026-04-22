@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
 sudo umount ~/Games/retrodeck
+
+rm -rf ~/Games/retrodeck
