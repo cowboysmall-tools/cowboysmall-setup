@@ -9,6 +9,7 @@ dnf install \
 
 
 dnf install \
-    youtube-dl gydl \
+    youtube-dl \
+    gydl \
     hydrogen
 
