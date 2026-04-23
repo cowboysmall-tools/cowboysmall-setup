@@ -19,7 +19,7 @@ tar xzvf /tmp/zed.app.tar.gz -C $HOME/Apps
 
 # install files
 install -D $HOME/Apps/zed.app/share/applications/dev.zed.Zed.desktop -t $HOME/.local/share/applications
-
+ln -s $HOME/Apps/zed.app/bin/zed $HOME/.local/bin/zedd
 
 
 # update desktop files
