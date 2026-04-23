@@ -6,7 +6,7 @@ Copy the `prime-run` script to the local bin directory:
 
 ```zsh
 
-> cp setup/os/common/gpu/prime-run ~/.local/bin
+> cp misc/nvidia/prime-run ~/.local/bin
 
 
 ```

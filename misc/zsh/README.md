@@ -219,7 +219,7 @@ alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ## Example configs
 
-```
+```zsh
 
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"

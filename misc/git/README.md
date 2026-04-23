@@ -1,4 +1,4 @@
-# General Tasks
+# Git Setup and General Tasks
 
 ## Remote Migration
 
