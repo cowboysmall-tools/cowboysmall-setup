@@ -33,7 +33,7 @@ Usage
 
 ```zsh
 
-> smb-mount Games/retrodeck
+> smb-mount Games/retrodeck games
 
 ...
 

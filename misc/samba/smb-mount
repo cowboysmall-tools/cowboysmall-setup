@@ -9,4 +9,4 @@ MOUNT_PATH=$1
 
 mkdir -p ~/$MOUNT_PATH
 
-sudo mount -t cifs //tristram.local/games ~/$MOUNT_PATH -o credentials=~/.smb-credentials,uid=1000,gid=1000
+sudo mount -t cifs //tristram.local/$2 ~/$MOUNT_PATH -o credentials=~/.smb-credentials,uid=1000,gid=1000
