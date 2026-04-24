@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/Games/retrodeck
+if [ $# -eq 0 ]; then
+  echo "Please specify the path to mount..."
+  exit 1
+fi
 
-sudo mount -t cifs //tristram.local/games ~/Games/retrodeck -o credentials=~/Games/.credentials,uid=1000,gid=1000
+MOUNT_PATH=$1
+
+mkdir -p ~/$MOUNT_PATH
+
+sudo mount -t cifs //tristram.local/games ~/$MOUNT_PATH -o credentials=~/.smb-credentials,uid=1000,gid=1000

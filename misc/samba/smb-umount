@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
-sudo umount ~/Games/retrodeck
+if [ $# -eq 0 ]; then
+  echo "Please specify the path to unmount..."
+  exit 1
+fi
 
-rm -rf ~/Games/retrodeck
+MOUNT_PATH=$1
+
+sudo umount ~/$MOUNT_PATH
+
+rm -rf ~/$MOUNT_PATH

@@ -9,3 +9,13 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 ls -la $SCRIPT_DIR/config
+
+if [ $# -eq 0 ]; then
+  echo "No Parameters Passed!"
+  exit 1
+fi
+
+PARAM=$1
+
+echo "Parameter Passed: $PARAM"
+
