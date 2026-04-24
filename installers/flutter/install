@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+# make Apps directory if it doesn't already exist
+mkdir -p $HOME/Apps
+
+
+# download archive
+curl -sL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.41.7-stable.tar.xz -o /tmp/flutter-stable.tar.zz
+
+
+# extract to Apps directory
+tar xvf /tmp/flutter-stable.tar.zz -C $HOME/Apps
+
+
+# install files
+ln -s $HOME/Apps/flutter/bin/flutter $HOME/.local/bin/flutter
+ln -s $HOME/Apps/flutter/bin/dart $HOME/.local/bin/dart
+
+
+# update desktop files
+
+
+
+
+# copy configs
+
