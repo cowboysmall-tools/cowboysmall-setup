@@ -1,73 +1,8 @@
 # Setup Notes
 
-## Grub
-
-It may be necessary to force the scaling of plymouth - in which case execute the following:
-
-```zsh
-
-> rpm-ostree kargs --editor
-
-
-```
-
-And add the following arguments:
-
-```
-
-> plymouth.force-scale=2
-
-
-```
-
-## GDM
-
-It may be necessary to force the scaling of GDM - in which case execute the following:
-
-```zsh
-
-> machinectl shell gdm@ /bin/bash
-
-> gsettings set org.gnome.desktop.interface scaling-factor 2
-> gsettings get org.gnome.desktop.interface scaling-factor
-
-> gsettings set org.gnome.desktop.interface accent-color "blue"
-> gsettings get org.gnome.desktop.interface accent-color
-
-
-```
-
-Specify your preferred scaling factor and accent color.
-
-Note: The above no longer works since Gnome 49 - you will need to also perform the following:
-
-```zsh
-
-> cp /var/lib/gdm/.config/dconf/user /var/lib/gdm/seat0/config/dconf/user
-
-
-```
-
-If you copied monitor settings to the gdm home directory you will also need to perform
-the following step:
-
-```zsh
-
-> cp /var/lib/gdm/.config/monitors.xml /var/lib/gdm/seat0/config/monitors.xml
-
-
-```
-
-You may also need to do the following to restore SELinux security contexts:
-
-```zsh
-
-> restorecon -RFv /var/lib/gdm/
-
-
-```
-
 ## Apps (Root)
+
+DEPRECATED: the old approach was as follows:
 
 ```zsh
 
@@ -79,11 +14,31 @@ You may also need to do the following to restore SELinux security contexts:
 
 ```
 
+The preferred aproach is to install these using homebrew:
+
+```zsh
+
+> brew install zsh figlet fortune stow
+
+
+```
+
+and explicitly configure the terminal to use zsh.
+
 ## Config (Root)
+
+Set the hostname:
 
 ```zsh
 
 > hostnamectl set-hostname <hostname>
+
+
+```
+
+Turn of the motd:
+
+```zsh
 
 > ujust toggle-user-motd
 
@@ -92,14 +47,46 @@ You may also need to do the following to restore SELinux security contexts:
 
 ## Config (User)
 
+Configure window switcher to show windows from all workspaces:
+
 ```zsh
 
 > gsettings get org.gnome.shell.window-switcher current-workspace-only
 > gsettings set org.gnome.shell.window-switcher current-workspace-only false
 
+
+```
+
+Set terminal opacity to 95%:
+
+```zsh
+
+> ujust ptyxis-transparency 0.95
+
+
+```
+
+The old way to do the above:
+
+```zsh
+
 > dconf write /org/gnome/Ptyxis/Profiles/<profile-id>/opacity 0.95
 
+
+```
+
+Setup SSH - create a public / private key pair:
+
+```zsh
+
 > ssh-keygen -t rsa
+
+
+```
+
+Turn of the motd:
+
+```zsh
 
 > ujust toggle-user-motd
 
