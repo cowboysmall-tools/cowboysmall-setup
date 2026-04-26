@@ -29,3 +29,8 @@ sed -i "s|Exec=zed|Exec=$HOME/Apps/zed.app/bin/zed|g" $HOME/.local/share/applica
 
 # copy configs
 cp $SCRIPT_DIR/config/*.json $HOME/.config/zed/
+
+
+
+# cleanup
+rm -f /tmp/zed.app.tar.gz

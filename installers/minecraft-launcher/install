@@ -28,3 +28,8 @@ sed -i "s|Exec=minecraft-launcher|Exec=$HOME/Apps/minecraft-launcher/minecraft-l
 
 
 # copy configs
+
+
+
+# cleanup
+rm -f /tmp/minecraft-launcher.tar.gz

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ $# -eq 0 ]; then
-  echo "Please specify the path to mount..."
+  echo "Please specify the local and remote paths to mount..."
   exit 1
 fi
 

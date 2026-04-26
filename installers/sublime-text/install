@@ -29,3 +29,7 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 # copy configs
 cp $SCRIPT_DIR/config/*.sublime-* $HOME/.config/sublime-text/Packages/User
+
+
+
+# cleanup

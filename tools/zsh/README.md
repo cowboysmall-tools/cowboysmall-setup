@@ -232,7 +232,6 @@ export NLTK_DATA=$HOME/Data/nltk_data
 
 export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config:$HOME/.kube/configs/petit-prod-kubeconfig.yaml
 
-export JAVA_HOME=/usr/lib/jvm/java
 export GOPATH=$HOME/.go
 export NPM_PREFIX=$HOME/.npm-global
 
@@ -247,11 +246,9 @@ fortune
 echo
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-
 [[! -f ~/.p10k.zsh]] || source ~/.p10k.zsh
 
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 

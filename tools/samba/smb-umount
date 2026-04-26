@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ $# -eq 0 ]; then
-  echo "Please specify the path to unmount..."
+  echo "Please specify the local path to unmount..."
   exit 1
 fi
 

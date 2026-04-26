@@ -28,3 +28,8 @@ sed -i "s|Exec=firefox-dev|Exec=$HOME/Apps/firefox/firefox|g" $HOME/.local/share
 
 
 # copy configs
+
+
+
+# cleanup
+rm -f /tmp/firefox-dev.tar.gz

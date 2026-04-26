@@ -10,15 +10,15 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 # download archive
-curl -sL https://github.com/dylanaraps/neofetch/releases/latest -o /tmp/neofetch-latest.tar.gz
+
 
 
 # extract to Apps directory
-tar xzvf /tmp/neofetch-latest.tar.gz -C /tmp/
+
 
 
 # install files
-install -D /tmp/neofetch/neofetch -t $HOME/.local/bin
+
 
 
 
@@ -31,5 +31,5 @@ install -D /tmp/neofetch/neofetch -t $HOME/.local/bin
 
 
 
+
 # cleanup
-rm -f /tmp/neofetch-latest.tar.gz

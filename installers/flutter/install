@@ -29,3 +29,7 @@ ln -s $HOME/Apps/flutter/bin/dart $HOME/.local/bin/dart
 
 # copy configs
 
+
+
+# cleanup
+rm -f /tmp/flutter-stable.tar.zz

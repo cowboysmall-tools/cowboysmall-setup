@@ -28,3 +28,8 @@ sed -i "s|Exec=MultiMC|Exec=$HOME/Apps/MultiMC/MultiMC|g" $HOME/.local/share/app
 
 
 # copy configs
+
+
+
+# cleanup
+rm -f /tmp/mmc-develop-lin64.tar.gz
