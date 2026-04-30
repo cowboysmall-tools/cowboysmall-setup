@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+
+# define the fonts to be installed
+fonts="JetBrainsMono Meslo"
+
+
+
+# change directory to the local fonts directory - create it if it doesn't exist
+mkdir -p $HOME/.local/share/fonts && cd $HOME/.local/share/fonts
+
+
+
+# download, extract, and cleanup the fonts
+for font in $fonts; do
+    echo "Downloading Font Archive: $font"
+    curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/$font.tar.xz
+    echo "Creating Font Directory: $font"
+    mkdir $font
+    echo "Extracting Font Into Directory: $font"
+    tar xf /tmp/$font.tar.xz -C $font/
+    echo "Removing Font Archive: $font"
+    rm -f /tmp/$font.tar.xz
+done
+
+
+
+# refresh the font cache
+fc-cache -fv

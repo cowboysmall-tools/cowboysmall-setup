@@ -6,7 +6,12 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
-# make Apps directory if it doesn't already exist
+# setup values
+
+
+
+
+# make install directory if it doesn't already exist
 mkdir -p $HOME/Apps
 
 
@@ -16,7 +21,7 @@ curl -sL https://launcher.mojang.com/download/Minecraft.tar.gz -o /tmp/minecraft
 
 
 
-# extract to Apps directory
+# extract to install directory
 tar xzvf /tmp/minecraft-launcher.tar.gz -C $HOME/Apps
 
 

@@ -6,7 +6,12 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
-# make Apps directory if it doesn't already exist
+# setup values
+
+
+
+
+# make install directory if it doesn't already exist
 mkdir -p $HOME/Apps
 
 
@@ -16,13 +21,13 @@ curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quar
 
 
 
-# extract to Apps directory
+# extract to install directory
 tar xzvf /tmp/quarto.tar.gz -C $HOME/Apps && mv $HOME/Apps/quarto* $HOME/Apps/quarto
 
 
 
 # install files
-ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
+ln -s $HOME/Apps/quarto/bin/quarto $HOME/.local/bin/quarto
 
 
 

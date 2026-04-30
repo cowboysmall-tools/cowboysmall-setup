@@ -6,7 +6,12 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
-# make Apps directory if it doesn't already exist
+# setup values
+
+
+
+
+# make install directory if it doesn't already exist
 mkdir -p $HOME/Apps/lmms
 
 
@@ -16,7 +21,7 @@ curl -sL https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-
 
 
 
-# extract to Apps directory
+# extract to install directory
 
 
 

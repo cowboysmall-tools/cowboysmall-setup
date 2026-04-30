@@ -6,18 +6,23 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
-# make Apps directory if it doesn't already exist
+# setup values
+
+
+
+
+# make install directory if it doesn't already exist
 mkdir -p $HOME/Apps
 
 
 
 # download archive
-curl -sL https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US -o /tmp/firefox-dev.tar.gz
+curl -sL https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US -o /tmp/firefox.tar.gz
 
 
 
-# extract to Apps directory
-tar xzvf /tmp/firefox-dev.tar.gz -C $HOME/Apps
+# extract to install directory
+tar xzvf /tmp/firefox.tar.gz -C $HOME/Apps
 
 
 
@@ -37,4 +42,4 @@ sed -i "s|Exec=firefox-dev|Exec=$HOME/Apps/firefox/firefox|g" $HOME/.local/share
 
 
 # cleanup
-rm -f /tmp/firefox-dev.tar.gz
+rm -f /tmp/firefox.tar.gz
