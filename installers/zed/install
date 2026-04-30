@@ -5,16 +5,20 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
+
 # make Apps directory if it doesn't already exist
 mkdir -p $HOME/Apps
+
 
 
 # download archive
 curl -sL https://cloud.zed.dev/releases/stable/latest/download?asset=zed&arch=x86_64&os=linux -o /tmp/zed.app.tar.gz
 
 
+
 # extract to Apps directory
 tar xzvf /tmp/zed.app.tar.gz -C $HOME/Apps
+
 
 
 # install files

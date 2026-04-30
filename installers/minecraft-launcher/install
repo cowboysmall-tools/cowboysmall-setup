@@ -5,16 +5,20 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
+
 # make Apps directory if it doesn't already exist
 mkdir -p $HOME/Apps
+
 
 
 # download archive
 curl -sL https://launcher.mojang.com/download/Minecraft.tar.gz -o /tmp/minecraft-launcher.tar.gz
 
 
+
 # extract to Apps directory
 tar xzvf /tmp/minecraft-launcher.tar.gz -C $HOME/Apps
+
 
 
 # install files
@@ -28,6 +32,7 @@ sed -i "s|Exec=minecraft-launcher|Exec=$HOME/Apps/minecraft-launcher/minecraft-l
 
 
 # copy configs
+
 
 
 

@@ -12,17 +12,17 @@ mkdir -p $HOME/Apps
 
 
 # download archive
-curl -sL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.41.7-stable.tar.xz -o /tmp/flutter-stable.tar.xz
+curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-linux-amd64.tar.gz -o /tmp/quarto.tar.gz
 
 
 
 # extract to Apps directory
-tar xvf /tmp/flutter-stable.tar.xz -C $HOME/Apps && mv $HOME/Apps/flutter* $HOME/Apps/flutter
+tar xzvf /tmp/quarto.tar.gz -C $HOME/Apps && mv $HOME/Apps/quarto* $HOME/Apps/quarto
 
 
 
 # install files
-
+ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
 
 
 
@@ -37,4 +37,4 @@ tar xvf /tmp/flutter-stable.tar.xz -C $HOME/Apps && mv $HOME/Apps/flutter* $HOME
 
 
 # cleanup
-rm -f /tmp/flutter-stable.tar.xz
+rm -f /tmp/quarto.tar.gz

@@ -5,15 +5,19 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
+
 # make Apps directory if it doesn't already exist
 mkdir -p $HOME/Apps/lmms
+
 
 
 # download archive
 curl -sL https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage -o $HOME/Apps/lmms/lmms.AppImage
 
 
+
 # extract to Apps directory
+
 
 
 
@@ -28,6 +32,7 @@ sed -i "s|Exec=lmms|Exec=env QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCALE_FACTOR=1 $HO
 
 
 # copy configs
+
 
 
 

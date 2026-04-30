@@ -5,7 +5,9 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
+
 # make Apps directory if it doesn't already exist
+
 
 
 
@@ -13,7 +15,9 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # extract to Apps directory
+
 
 
 

@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
+
 # define the fonts to be installed
 fonts="JetBrainsMono Meslo"
 
+
+
 # change directory to the local fonts directory - create it if it doesn't exist
 mkdir -p $HOME/.local/share/fonts && cd $HOME/.local/share/fonts
+
+
 
 # download, extract, and cleanup the fonts
 for font in $fonts; do
@@ -17,6 +22,8 @@ for font in $fonts; do
     echo "Removing Font Archive: $font"
     rm -f /tmp/$font.tar.xz
 done
+
+
 
 # refresh the font cache
 fc-cache -fv

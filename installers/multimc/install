@@ -5,16 +5,20 @@
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
+
 # make Apps directory if it doesn't already exist
 mkdir -p $HOME/Apps
+
 
 
 # download archive
 curl -sL https://files.multimc.org/downloads/mmc-develop-lin64.tar.gz -o /tmp/mmc-develop-lin64.tar.gz
 
 
+
 # extract to Apps directory
 tar xzvf /tmp/mmc-develop-lin64.tar.gz -C $HOME/Apps
+
 
 
 # install files
@@ -28,6 +32,7 @@ sed -i "s|Exec=MultiMC|Exec=$HOME/Apps/MultiMC/MultiMC|g" $HOME/.local/share/app
 
 
 # copy configs
+
 
 
 
