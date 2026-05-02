@@ -7,5 +7,8 @@ dnf install \
     gnome-extensions-app \
     gnome-shell-extension-appindicator \
     gnome-shell-extension-blur-my-shell \
-    gnome-shell-extension-just-perfection \
-    gnome-themes-extra
+    gnome-shell-extension-just-perfection
+
+
+# Deprecated / Removed
+#    gnome-themes-extra
