@@ -4,5 +4,6 @@
 dnf install \
     gimp \
     inkscape \
-    vlc \
-    lollypop
+    vlc
+
+    # lollypop

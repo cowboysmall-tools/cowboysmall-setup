@@ -3,7 +3,6 @@
 
 # Base
 dnf install \
-    stow \
     lshw \
     btop \
     htop \

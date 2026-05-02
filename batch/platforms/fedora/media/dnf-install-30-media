@@ -8,8 +8,10 @@ dnf install \
     zynaddsubfx zynaddsubfx-lv2
 
 
+dnf install hydrogen
+
+
 dnf install \
-    youtube-dl \
-    gydl \
-    hydrogen
+    yt-dlp \
+    video-downloader
 

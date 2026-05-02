@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-
-dnf install \
-    texlive-scheme-basic \
-    texlive-chktex \
-    latexmk \
-    zathura \
-    zathura-plugins-all

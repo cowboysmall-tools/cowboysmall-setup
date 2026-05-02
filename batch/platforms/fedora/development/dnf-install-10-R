@@ -3,9 +3,11 @@
 
 dnf copr enable iucar/cran
 
+dnf install R
+
+dnf install R-CoprManager
+
 dnf install \
-    R \
-    R-CoprManager \
     R-CRAN-plyr \
     R-CRAN-dplyr \
     R-CRAN-readr \
