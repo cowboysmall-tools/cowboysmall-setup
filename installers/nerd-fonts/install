@@ -11,7 +11,7 @@ fonts="JetBrainsMono Meslo"
 
 
 
-# make install directory if it doesn't already exist
+# make directories if they don't already exist
 for font in $fonts; do
     mkdir -p $HOME/.local/share/fonts/$font
 done
@@ -21,7 +21,7 @@ for font in $fonts; do
     curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/$font.tar.xz
 done
 
-# extract to install directory
+# extract archive
 for font in $fonts; do
     tar xf /tmp/$font.tar.xz -C $HOME/.local/share/fonts/$font/
 done
