@@ -22,7 +22,7 @@ curl -sL https://storage.googleapis.com/flutter_infra_release/releases/stable/li
 
 
 # extract archive
-tar xvf /tmp/flutter.tar.xz -C $HOME/Apps && mv $HOME/Apps/flutter* $HOME/Apps/flutter
+tar xvf /tmp/flutter.tar.xz -C $HOME/Apps
 
 
 

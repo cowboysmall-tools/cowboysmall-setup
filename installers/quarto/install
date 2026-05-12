@@ -22,13 +22,13 @@ curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quar
 
 
 # extract archive
-tar xzvf /tmp/quarto.tar.gz -C $HOME/Apps && mv $HOME/Apps/quarto* $HOME/Apps/quarto
+tar xzvf /tmp/quarto.tar.gz -C $HOME/Apps
 
 
 
 # install files
-ln -s $HOME/Apps/quarto/bin/quarto $HOME/.local/bin/quarto
-
+[ -L $HOME/.local/bin/quarto ] && rm $HOME/.local/bin/quarto
+ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
 
 
 # update desktop files
