@@ -19,7 +19,6 @@ Telegram                       org.telegram.desktop                             
 VLC                            org.videolan.VLC                                  3.0.21                         stable           system
 Sober                          org.vinegarhq.Sober                               1.6.5                          stable           system
 VacuumTube                     rocks.shy.VacuumTube                              1.5.3                          stable           system
-Plex                           tv.plex.PlexDesktop                               1.112.0                        stable           system
 Plex HTPC                      tv.plex.PlexHTPC                                  1.70.1                         stable           system
 
 ...

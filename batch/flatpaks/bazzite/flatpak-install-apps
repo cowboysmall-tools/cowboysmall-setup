@@ -5,18 +5,26 @@ echo
 
 
 flatpak install --assumeyes flathub com.belmoussaoui.Authenticator
+flatpak install --assumeyes flathub com.discordapp.Discord
+flatpak install --assumeyes flathub com.google.Chrome
 flatpak install --assumeyes flathub com.heroicgameslauncher.hgl
 flatpak install --assumeyes flathub com.obsproject.Studio
 flatpak install --assumeyes flathub com.spotify.Client
+flatpak install --assumeyes flathub de.schmidhuberj.tubefeeder
 flatpak install --assumeyes flathub im.riot.Riot
+flatpak install --assumeyes flathub io.github.realmazharhussain.GdmSettings
+flatpak install --assumeyes flathub io.itch.itch
 flatpak install --assumeyes flathub net.retrodeck.retrodeck
+flatpak install --assumeyes flathub org.jellyfin.JellyfinDesktop
+flatpak install --assumeyes flathub org.libretro.RetroArch
 flatpak install --assumeyes flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes flathub org.telegram.desktop
 flatpak install --assumeyes flathub org.videolan.VLC
+flatpak install --assumeyes flathub org.vinegarhq.Sober
 flatpak install --assumeyes flathub rocks.shy.VacuumTube
+flatpak install --assumeyes flathub tv.plex.PlexHTPC
 
 
-# flatpak install --assumeyes flathub com.discordapp.Discord
 # flatpak install --assumeyes flathub org.gnome.Fractal
 # flatpak install --assumeyes flathub org.gnome.Podcasts
 # flatpak install --assumeyes flathub org.gnome.Lollypop
