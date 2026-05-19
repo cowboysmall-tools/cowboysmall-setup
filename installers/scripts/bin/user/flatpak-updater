@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo
+echo
+
+flatpak update --assumeyes
+
+echo
+echo
+
+flatpak uninstall --unused --assumeyes
+
+echo
+echo
+
+flatpak repair
+
+echo
+echo

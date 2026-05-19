@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+dnf4 upgrade --refresh
+
+echo
+echo
+
+dnf4 check
+
+echo
+echo
+
+dnf4 repoquery --unsatisfied
+dnf4 repoquery --duplicated
+
+echo
+echo
+
+dnf4 list extras
+
+echo
+echo
+
+dnf4 autoremove
+
+echo
+echo
+
+dnf4 distro-sync --allowerasing
+
+echo
+echo
+
+rpmconf -a

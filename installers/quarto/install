@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,8 +23,10 @@ mkdir -p $HOME/Apps
 
 
 
+
 # download archive
 curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-linux-amd64.tar.gz -o /tmp/quarto.tar.gz
+
 
 
 
@@ -26,9 +35,11 @@ tar xzvf /tmp/quarto.tar.gz -C $HOME/Apps
 
 
 
+
 # install files
 [ -L $HOME/.local/bin/quarto ] && rm $HOME/.local/bin/quarto
 ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
+
 
 
 # update desktop files
@@ -36,7 +47,9 @@ ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
 
 
 
+
 # copy configs
+
 
 
 

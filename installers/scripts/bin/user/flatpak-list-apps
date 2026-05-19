@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+echo
+echo
+
+# flatpak list --app --columns=name,application,version,branch,origin,installation,runtime
+flatpak list --app
+
+echo
+echo

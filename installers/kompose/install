@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,12 +23,15 @@ mkdir -p $HOME/.local/bin
 
 
 
+
 # download archive
 curl -L https://github.com/kubernetes/kompose/releases/download/v1.38.0/kompose-linux-amd64 -o $HOME/.local/bin/kompose
 
 
 
+
 # extract archive
+
 
 
 
@@ -31,12 +41,15 @@ chmod a+x $HOME/.local/bin/kompose
 
 
 
+
 # update desktop files
 
 
 
 
+
 # copy configs
+
 
 
 

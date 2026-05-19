@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,8 +23,10 @@ mkdir -p $HOME/Apps
 mkdir -p $HOME/.config/sublime-text/Packages/User
 
 
+
 # download archive
 curl -sL https://download.sublimetext.com/sublime_text_build_4200_x64.tar.xz -o /tmp/sublime_text.tar.xz
+
 
 
 
@@ -26,9 +35,11 @@ tar xvf /tmp/sublime_text.tar.xz -C $HOME/Apps
 
 
 
+
 # install files
 install -D $HOME/Apps/sublime_text/sublime_text.desktop -t $HOME/.local/share/applications
 ln -s $HOME/Apps/sublime_text/sublime_text $HOME/.local/bin/subl
+
 
 
 # update desktop files
@@ -36,8 +47,10 @@ sed -i "s|Icon=sublime-text|Icon=$HOME/Apps/sublime_text/Icon/256x256/sublime-te
 sed -i "s|Exec=/opt/sublime_text/sublime_text|Exec=$HOME/Apps/sublime_text/sublime_text|g" $HOME/.local/share/applications/sublime_text.desktop
 
 
+
 # copy configs
 cp $SCRIPT_DIR/config/*.sublime-* $HOME/.config/sublime-text/Packages/User
+
 
 
 

@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,8 +23,10 @@ mkdir -p $HOME/Apps
 mkdir -p $HOME/.config/Code/User
 
 
+
 # download archive
 curl -sL https://code.visualstudio.com/sha/download?build=stable&os=linux-x64 -o /tmp/code.tar.gz
+
 
 
 
@@ -26,9 +35,11 @@ tar xzvf /tmp/code.tar.gz -C $HOME/Apps
 
 
 
+
 # install files
 install -D $SCRIPT_DIR/config/code.desktop -t $HOME/.local/share/applications
 ln -s $HOME/Apps/VSCode-linux-x64/bin/code $HOME/.local/bin/code
+
 
 
 # update desktop files
@@ -36,8 +47,10 @@ sed -i "s|Icon=vscode|Icon=$HOME/Apps/VSCode-linux-x64/resources/app/resources/l
 sed -i "s|Exec=/usr/share/code/code|Exec=$HOME/Apps/VSCode-linux-x64/code|g" $HOME/.local/share/applications/code.desktop
 
 
+
 # copy configs
 cp $SCRIPT_DIR/config/*.json $HOME/.config/Code/User
+
 
 
 

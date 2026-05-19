@@ -1,16 +1,5 @@
 # GPU
 
-## Prime Run (NVIDIA only)
-
-Copy the `prime-run` script to the local bin directory:
-
-```zsh
-
-> cp misc/nvidia/prime-run ~/.local/bin
-
-
-```
-
 ## Integrated
 
 ```zsh

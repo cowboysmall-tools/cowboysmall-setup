@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,7 +23,9 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # download archive
+
 
 
 
@@ -26,7 +35,9 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # install files
+
 
 
 
@@ -36,7 +47,9 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # copy configs
+
 
 
 

@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
 
 
 
@@ -11,23 +17,28 @@ fonts="JetBrainsMono Meslo"
 
 
 
+
 # make directories if they don't already exist
 for font in $fonts; do
     mkdir -p $HOME/.local/share/fonts/$font
 done
+
 
 # download archive
 for font in $fonts; do
     curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/$font.tar.xz
 done
 
+
 # extract archive
 for font in $fonts; do
     tar xf /tmp/$font.tar.xz -C $HOME/.local/share/fonts/$font/
 done
 
+
 # install files
 fc-cache -fv
+
 
 
 
@@ -36,7 +47,9 @@ fc-cache -fv
 
 
 
+
 # copy configs
+
 
 
 

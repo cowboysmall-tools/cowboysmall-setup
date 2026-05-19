@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 
+# pre script checks
+
+
+
+
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 
+
 # setup values
+
 
 
 
@@ -16,12 +23,15 @@ mkdir -p $HOME/.local/bin
 
 
 
+
 # download archive
 curl -L "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" -o $HOME/.local/bin/kubectl
 
 
 
+
 # extract archive
+
 
 
 
@@ -31,12 +41,15 @@ chmod a+x $HOME/.local/bin/kubectl
 
 
 
+
 # update desktop files
 
 
 
 
+
 # copy configs
+
 
 
 

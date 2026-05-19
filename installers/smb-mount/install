@@ -25,20 +25,20 @@ mkdir -p $HOME/.local/bin
 
 
 # download archive
-curl -sL https://github.com/dylanaraps/neofetch/releases/latest -o /tmp/neofetch.tar.gz
+
 
 
 
 
 # extract archive
-tar xzvf /tmp/neofetch.tar.gz -C /tmp/
+
 
 
 
 
 # install files
-install -D /tmp/neofetch/neofetch -t $HOME/.local/bin
-
+install -D $SCRIPT_DIR/bin/smb-mount -t $HOME/.local/bin
+install -D $SCRIPT_DIR/bin/smb-umount -t $HOME/.local/bin
 
 
 
@@ -49,10 +49,9 @@ install -D /tmp/neofetch/neofetch -t $HOME/.local/bin
 
 
 # copy configs
-
+cp $SCRIPT_DIR/config/.smb-credentials $HOME
 
 
 
 
 # cleanup
-rm -rf /tmp/neofetch.tar.gz /tmp/neofetch
