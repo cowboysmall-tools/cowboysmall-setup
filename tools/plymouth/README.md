@@ -29,6 +29,15 @@ and update the `GRUB_CMDLINE_LINUX` variable to the following:
 
 ```
 
+and then execute the following:
+
+```
+
+> grub2-mkconfig -o /boot/grub2/grub.cfg
+
+
+```
+
 ## Scaling (Bazzite)
 
 On bazzite you will need to do the following:
