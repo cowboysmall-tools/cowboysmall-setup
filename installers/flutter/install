@@ -19,19 +19,19 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 # make directories if they don't already exist
+mkdir -p /tmp/installers
 mkdir -p $HOME/Apps
 
 
 
-
 # download archive
-curl -sL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.44.0-stable.tar.xz -o /tmp/flutter.tar.xz
+curl -sL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.44.0-stable.tar.xz -o /tmp/installers/flutter.tar.xz
 
 
 
 
 # extract archive
-tar xvf /tmp/flutter.tar.xz -C $HOME/Apps
+tar xvf /tmp/installers/flutter.tar.xz -C $HOME/Apps
 
 
 
@@ -55,4 +55,4 @@ tar xvf /tmp/flutter.tar.xz -C $HOME/Apps
 
 
 # cleanup
-rm -f /tmp/flutter.tar.xz
+rm -f /tmp/installers/flutter.tar.xz

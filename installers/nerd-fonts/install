@@ -19,20 +19,20 @@ fonts="JetBrainsMono Meslo"
 
 
 # make directories if they don't already exist
+mkdir -p /tmp/installers
 for font in $fonts; do
     mkdir -p $HOME/.local/share/fonts/$font
 done
 
-
 # download archive
 for font in $fonts; do
-    curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/$font.tar.xz
+    curl -sL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$font.tar.xz -o /tmp/installers/$font.tar.xz
 done
 
 
 # extract archive
 for font in $fonts; do
-    tar xf /tmp/$font.tar.xz -C $HOME/.local/share/fonts/$font/
+    tar xf /tmp/installers/$font.tar.xz -C $HOME/.local/share/fonts/$font/
 done
 
 
@@ -56,5 +56,5 @@ fc-cache -fv
 
 # cleanup
 for font in $fonts; do
-    rm -f /tmp/$font.tar.xz
+    rm -f /tmp/installers/$font.tar.xz
 done

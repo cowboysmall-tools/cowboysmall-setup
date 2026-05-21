@@ -19,19 +19,19 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 # make directories if they don't already exist
+mkdir -p /tmp/installers
 mkdir -p $HOME/Apps
 mkdir -p $HOME/.config/sublime-text/Packages/User
 
 
-
 # download archive
-curl -sL https://download.sublimetext.com/sublime_text_build_4200_x64.tar.xz -o /tmp/sublime_text.tar.xz
+curl -sL https://download.sublimetext.com/sublime_text_build_4200_x64.tar.xz -o /tmp/installers/sublime_text.tar.xz
 
 
 
 
 # extract archive
-tar xvf /tmp/sublime_text.tar.xz -C $HOME/Apps
+tar xvf /tmp/installers/sublime_text.tar.xz -C $HOME/Apps
 
 
 
@@ -55,4 +55,4 @@ cp $SCRIPT_DIR/config/*.sublime-* $HOME/.config/sublime-text/Packages/User
 
 
 # cleanup
-rm -f /tmp/sublime_text.tar.xz
+rm -f /tmp/installers/sublime_text.tar.xz

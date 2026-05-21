@@ -19,13 +19,13 @@ SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 
 # make directories if they don't already exist
-
+mkdir -p /tmp/installers
 
 
 
 
 # download archive
-curl -sL https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -o /tmp/msttcore-fonts-installer-2.6-1.noarch.rpm
+curl -sL https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -o /tmp/installers/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 
 
@@ -37,7 +37,7 @@ curl -sL https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fo
 
 
 # install files
-dnf install /tmp/msttcore-fonts-installer-2.6-1.noarch.rpm
+dnf install /tmp/installers/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 
 
@@ -55,4 +55,4 @@ dnf install /tmp/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 
 # cleanup
-rm -f /tmp/msttcore-fonts-installer-2.6-1.noarch.rpm
+rm -f /tmp/installers/msttcore-fonts-installer-2.6-1.noarch.rpm
