@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-fwupdmgr get-devices
-
-echo
-echo
-
 fwupdmgr refresh --force
 
 echo
