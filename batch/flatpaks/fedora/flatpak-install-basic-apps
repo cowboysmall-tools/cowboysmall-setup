@@ -4,6 +4,7 @@ echo
 echo
 
 
+flatpak install --assumeyes flathub app.zen_browser.zen
 flatpak install --assumeyes flathub com.belmoussaoui.Authenticator
 flatpak install --assumeyes flathub com.discordapp.Discord
 flatpak install --assumeyes flathub com.github.jeromerobert.pdfarranger
