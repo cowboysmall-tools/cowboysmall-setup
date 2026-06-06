@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# pre script checks
+
+
+
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+
+
+# setup values
+
+
+
+
+
+# make directories if they don't already exist
+
+
+
+
+
+# download archive
+
+
+
+
+
+# extract archive
+
+
+
+
+
+# install files
+
+
+
+
+
+# update desktop files
+
+
+
+
+
+# copy configs
+
+
+
+
+
+# cleanup

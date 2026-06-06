@@ -37,9 +37,9 @@ curl -sL https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-
 
 
 # install files
+chmod a+x $HOME/Apps/lmms/lmms.AppImage
 install -D $SCRIPT_DIR/config/lmms.desktop -t $HOME/.local/share/applications
 install -D $SCRIPT_DIR/config/lmms-64x64.png -t $HOME/Apps/lmms
-
 
 
 # update desktop files
