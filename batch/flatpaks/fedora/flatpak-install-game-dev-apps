@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+echo
+echo
+
+
+flatpak install --assumeyes flathub com.unity.UnityHub
+flatpak install --assumeyes flathub io.gdevelop.ide
+flatpak install --assumeyes flathub net.blockbench.Blockbench
+flatpak install --assumeyes flathub org.godotengine.Godot
+flatpak install --assumeyes flathub org.vinegarhq.Vinegar
+
+
+echo
+echo

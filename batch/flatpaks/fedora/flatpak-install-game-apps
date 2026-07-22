@@ -7,10 +7,11 @@ echo
 flatpak install --assumeyes flathub com.heroicgameslauncher.hgl
 flatpak install --assumeyes flathub com.valvesoftware.Steam
 flatpak install --assumeyes flathub com.vysp3r.ProtonPlus
+flatpak install --assumeyes flathub io.itch.itch
 flatpak install --assumeyes flathub net.lutris.Lutris
 flatpak install --assumeyes flathub org.libretro.RetroArch
 flatpak install --assumeyes flathub org.prismlauncher.PrismLauncher
-flatpak install --assumeyes flathub org.vinegarhq.Vinegar
+flatpak install --assumeyes flathub org.vinegarhq.Sober
 
 # flatpak install --assumeyes flathub com.atlauncher.ATLauncher
 # flatpak install --assumeyes flathub com.modrinth.ModrinthApp
