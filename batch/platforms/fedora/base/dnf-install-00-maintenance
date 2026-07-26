@@ -7,5 +7,4 @@ dnf install \
     remove-retired-packages \
     clean-rpm-gpg-pubkey \
     symlinks \
-    dracut-config-rescue \
-    stow
+    dracut-config-rescue
