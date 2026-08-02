@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+
+xbps-install -S R
+
+xbps-install -S \
+    R-cran-plyr \
+    R-cran-dplyr \
+    R-cran-data.table \
+    R-cran-reshape2 \
+    R-cran-ggplot2
+
+
+    # R-cran-car \
+    # R-cran-e1071 \
+    # R-cran-languageserver \
+    # R-cran-plotly \
+    # R-cran-readr \
+    # R-cran-ROCR \
+    # R-cran-tidyr \
