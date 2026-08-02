@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+
+xbps-install -S base-devel
+
+
+# Meson
+xbps-install -S meson
+
+
+# Python
+xbps-install -S python python-devel
+
+
+# C / C++
+xbps-install -S \
+    clang22 clang22-devel \
+    cmake \
+    CUnit CUnit-devel \
+    check check-devel \
+    ncurses ncurses-devel \
+    notcurses notcurses-devel \
+    bear
+
+
+# Rust
+xbps-install -S rustup
+
+
+# Julia
+xbps-install -S juliaup
+
+
+# Go
+xbps-install -S go hugo
+
+
+# Zig
+xbps-install -S zig
+
+
+# Lua
+xbps-install -S lua
+
+
+# GTK4
+xbps-install -S gtk4 gtk4-devel
+
+
+# Liadwaita
+xbps-install -S libadwaita libadwaita-devel
