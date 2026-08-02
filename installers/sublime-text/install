@@ -38,7 +38,7 @@ tar xvf /tmp/installers/sublime_text.tar.xz -C $HOME/Apps
 
 # install files
 install -D $HOME/Apps/sublime_text/sublime_text.desktop -t $HOME/.local/share/applications
-ln -s $HOME/Apps/sublime_text/sublime_text $HOME/.local/bin/subl
+install -D $SCRIPT_DIR/bin/subl -t $HOME/.local/bin/
 
 
 

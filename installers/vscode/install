@@ -38,7 +38,7 @@ tar xzvf /tmp/installers/code.tar.gz -C $HOME/Apps
 
 # install files
 install -D $SCRIPT_DIR/config/code.desktop -t $HOME/.local/share/applications
-ln -s $HOME/Apps/VSCode-linux-x64/bin/code $HOME/.local/bin/code
+install -D $HOME/Apps/VSCode-linux-x64/bin/code -t $HOME/.local/bin/
 
 
 
