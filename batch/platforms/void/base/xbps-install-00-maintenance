@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+xbps-install -S \
+    lshw \
+    btop \
+    htop \
+    stow
+
+
+
+xbps-install -S tmux screen
+
+
+xbps-install -S fwupd

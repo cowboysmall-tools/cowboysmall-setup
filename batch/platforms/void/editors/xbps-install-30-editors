@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+
+# Sublime Text
+xbps-install -S sublime-text4
+
+
+# NeoVim
+xbps-install -S neovim
+
+
+# Helix
+xbps-install -S helix

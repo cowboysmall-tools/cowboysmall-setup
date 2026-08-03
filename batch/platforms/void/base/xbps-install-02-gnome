@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+
+# Video
+xbps-install -S \
+    mesa-dri \
+    vulkan-loader \
+    mesa-vulkan-intel \
+    intel-video-accel
+
+
+# Gnome
+xbps-install -S \
+    gnome \
+    gdm \
+    gnome-shell-extensions
+
+
+
+xbps-install -S xdg-desktop-portal xdg-desktop-portal-gnome
+
+
+
+xbps-install -S xdg-user-dirs xdg-utils

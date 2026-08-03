@@ -1,10 +1,34 @@
 #!/usr/bin/env bash
 
 
+# Grub
+xbps-install -S grub-x86_64-efi
+
+
+# Secure Boot
+xbps-install -S sbctl sbsigntool efitools
+
+
+# Firmware / Microcode
+xbps-install -S intel-ucode linux-firmware-intel
+
+
+# System Services
 xbps-install -S \
-    lshw \
-    btop \
-    htop \
-    tmux \
-    screen \
-    stow
+    cronie \
+    dbus \
+    plymouth \
+    socklog-void \
+    zramen
+
+
+# Pipewire
+xbps-install -S pipewire wireplumber
+
+
+# Bluetooth
+xbps-install -S bluez libspa-bluetooth
+
+
+# Flatpak
+xbps-install -S flatpak
