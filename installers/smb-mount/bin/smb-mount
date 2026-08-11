@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 if [ $# -eq 0 ]; then
-  echo "Please specify the local and remote paths to mount..."
+  echo "Please specify the server, the remote share, the local path to mount, the username, and the password..."
   exit 1
 fi
 
-MOUNT_PATH=$1
+MOUNT_PATH=$3
 
 mkdir -p ~/$MOUNT_PATH
 
-sudo mount -t cifs //tristram.local/$2 ~/$MOUNT_PATH -o credentials=~/.smb-credentials,uid=1000,gid=1000
+sudo mount -t cifs //$1/$2 ~/$MOUNT_PATH -o username=$4, password=$5,uid=1000,gid=1000
