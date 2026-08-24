@@ -25,20 +25,20 @@ mkdir -p $HOME/.local/bin
 
 
 # download archive
-curl -sL https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.tar.gz -o /tmp/installers/neofetch.tar.gz
-
+# curl -sL https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.tar.gz -o /tmp/installers/neofetch.tar.gz
+curl -sL https://raw.githubusercontent.com/dylanaraps/neofetch/refs/heads/master/neofetch -o /tmp/installers/neofetch
 
 
 
 # extract archive
-tar xzvf /tmp/installers/neofetch.tar.gz -C /tmp/installers/
+# tar xzvf /tmp/installers/neofetch.tar.gz -C /tmp/installers/
 
 
 
 
 # install files
-install -D /tmp/installers/neofetch-7.1.0/neofetch -t $HOME/.local/bin
-
+# install -D /tmp/installers/neofetch-7.1.0/neofetch -t $HOME/.local/bin
+install -D /tmp/installers/neofetch -t $HOME/.local/bin
 
 
 
@@ -55,4 +55,4 @@ install -D /tmp/installers/neofetch-7.1.0/neofetch -t $HOME/.local/bin
 
 
 # cleanup
-rm -rf /tmp/installers/neofetch.tar.gz /tmp/installers/neofetch
+# rm -rf /tmp/installers/neofetch.tar.gz /tmp/installers/neofetch
