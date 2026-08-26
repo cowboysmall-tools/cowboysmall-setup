@@ -6,7 +6,7 @@ Copy settings files to the sublime text config directory:
 
 ```zsh
 
-> cp setup/editors/sublime-text/*.sublime-* ~/.config/sublime-text/Packages/User
+> cp installers/sublime-text/config/*.sublime-* ~/.config/sublime-text/Packages/User
 
 ```
 
