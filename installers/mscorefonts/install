@@ -38,8 +38,8 @@ curl -sL https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fo
 
 # install files
 # dnf install /tmp/installers/msttcore-fonts-installer-2.6-1.noarch.rpm
+dnf install cabextract xorg-x11-font-utils
 rpm -ivh --nodigest --nofiledigest /tmp/installers/msttcore-fonts-installer-2.6-1.noarch.rpm
-
 
 
 # update desktop files
