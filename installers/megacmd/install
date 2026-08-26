@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+# pre script checks
+
+
+
+
+
+# store the location of the script
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+
+
+
+
+# setup values
+
+
+
+
+
+# make directories if they don't already exist
+mkdir -p /tmp/installers
+
+
+
+
+# download archive
+curl -sL https://mega.nz/linux/repo/Fedora_44/x86_64/megacmd-Fedora_44.x86_64.rpm -o /tmp/installers/megacmd-Fedora_44.x86_64.rpm
+
+
+
+
+# extract archive
+
+
+
+
+
+# install files
+dnf install /tmp/installers/megacmd-Fedora_44.x86_64.rpm
+
+
+
+
+# update desktop files
+
+
+
+
+
+# copy configs
+
+
+
+
+
+# cleanup
+rm -f /tmp/installers/megacmd-Fedora_44.x86_64.rpm
