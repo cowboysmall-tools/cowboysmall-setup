@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+
+dnf install \
+    yt-dlp \
+    video-downloader
+

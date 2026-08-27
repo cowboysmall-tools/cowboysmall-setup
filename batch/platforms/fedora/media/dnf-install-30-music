@@ -10,8 +10,3 @@ dnf install \
 
 dnf install hydrogen
 
-
-dnf install \
-    yt-dlp \
-    video-downloader
-
