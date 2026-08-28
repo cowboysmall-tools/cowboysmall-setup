@@ -8,7 +8,7 @@
 
 # store the location of the script
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
-
+VERSION=1.10.18
 
 
 
@@ -25,7 +25,7 @@ mkdir -p $HOME/Apps
 
 
 # download archive
-curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-linux-amd64.tar.gz -o /tmp/installers/quarto.tar.gz
+curl -sL https://github.com/quarto-dev/quarto-cli/releases/download/v${VERSION}/quarto-${VERSION}-linux-amd64.tar.gz -o /tmp/installers/quarto.tar.gz
 
 
 
@@ -38,7 +38,7 @@ tar xzvf /tmp/installers/quarto.tar.gz -C $HOME/Apps
 
 # install files
 [ -L $HOME/.local/bin/quarto ] && rm $HOME/.local/bin/quarto
-ln -s $HOME/Apps/quarto-1.9.37/bin/quarto $HOME/.local/bin/quarto
+ln -s $HOME/Apps/quarto-${VERSION}/bin/quarto $HOME/.local/bin/quarto
 
 
 
