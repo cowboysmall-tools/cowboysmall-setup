@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+
+dnf copr enable teervo/helm-synth
+
+dnf install helm-synth lv2-helm-synth vst-helm-synth

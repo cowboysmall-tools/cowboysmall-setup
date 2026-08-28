@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
 
-dnf install \
-    Carla lv2-carla \
-    helm lv2-helm \
-    amsynth lv2-amsynth-plugin \
-    zynaddsubfx zynaddsubfx-lv2
+dnf install Carla lv2-carla
 
+dnf install amsynth lv2-amsynth-plugin vst-amsynth-plugin
+
+dnf install zynaddsubfx zynaddsubfx-lv2 zynaddsubfx-vst
 
 dnf install hydrogen
-
