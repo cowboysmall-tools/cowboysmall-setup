@@ -6,7 +6,7 @@ Copy settings file to the vscode config directory:
 
 ```zsh
 
-> cp setup/editors/vscode/*.json    ~/.config/Code/User/
+> cp installers/vscode/config/*.json    ~/.config/Code/User/
 
 ```
 
