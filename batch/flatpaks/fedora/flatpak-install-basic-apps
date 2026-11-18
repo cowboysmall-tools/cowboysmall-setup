@@ -25,6 +25,7 @@ flatpak install --assumeyes flathub org.signal.Signal
 flatpak install --assumeyes flathub org.telegram.desktop
 flatpak install --assumeyes flathub org.videolan.VLC
 flatpak install --assumeyes flathub us.zoom.Zoom
+flatpak install --assumeyes flathub vn.hoabinh.quan.CoBang
 
 # flatpak install --assumeyes flathub com.github.rafostar.Clapper
 # flatpak install --assumeyes flathub com.simplenote.Simplenote
